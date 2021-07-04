@@ -6,7 +6,7 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		//준비 
-		//클래스명 변수명 = new 
+		//클래스명 변수명 = new 클래스명();
 		SwitchTest01 st = new SwitchTest01;
 				
 		//실행
@@ -17,6 +17,7 @@ public class TestMain {
 //		st.test4();
 		st.test5();
 		
+		new SwitchTest02().testSwitch();
 	}
 
 }
