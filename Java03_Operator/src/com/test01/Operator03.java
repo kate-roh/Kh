@@ -6,28 +6,29 @@ public class Operator03 {
 		test.opTest1();
 	}
 
-	//&(±×¸®°í, ~¸é¼­)
-	//¤Ó¤Ó(¶Ç´Â, ~°Å³ª)
-	//³í¸®°ª&&³í¸®°ª, ³í¸®°ª¤Ó¤Ó³í¸®°ª
+	// &(ê·¸ë¦¬ê³ , ~ë©´ì„œ)
+	// ||(ë˜ëŠ”, ~ê±°ë‚˜)
+	// ë…¼ë¦¬ê°’&&ë…¼ë¦¬ê°’, ë…¼ë¦¬ê°’ || ë…¼ë¦¬ê°’
+	
 	public void opTest1() {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö ÇÏ³ª ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ í•˜ë‚˜ ì…ë ¥: ");
 		int num = sc.nextInt();
 		
-		System.out.print("1ºÎÅÍ 100»çÀÌÀÎÁö È®ÀÎ: " + (num>=1 && num<100));
+		System.out.print("1ë¶€í„° 100ì‚¬ì´ì¸ì§€ í™•ì¸: " + (num>=1 && num<100));
 	
-		System.out.print("¹®ÀÚÇÏ³ª ÀÔ·Â: ");
+		System.out.print("ë¬¸ìí•˜ë‚˜ ì…ë ¥: ");
 		char ch = sc.next().charAt(0);
-		//´ë¹®ÀÚÀÎÁö È®ÀÎ
-		System.out.println("¿µ´ë¹®ÀÚÀÎÁö È®ÀÎ : " + ( ch>='A'&& ch<='Z' ));
+		//ëŒ€ë¬¸ìì¸ì§€ í™•ì¸
+		System.out.println("ì˜ëŒ€ë¬¸ìì¸ì§€ í™•ì¸ : " + ( ch>='A'&& ch<='Z' ));
 		
-		//ll
-		//ÀÔ·ÂÇÑ ¹®ÀÚ°¡ ´ë¼Ò¹®ÀÚ¿Í »ó°ü¾øÀÌ 'y', 'Y'ÀÎÁö È®ÀÎÇÒ¶§
+		// ||
+		// ì…ë ¥í•œ ë¬¸ìê°€ ëŒ€ì†Œë¬¸ìì™€ ìƒê´€ì—†ì´ 'y', 'Y'ì¸ì§€ í™•ì¸í• ë•Œ
 		
-		System.out.print("°è¼Ó ÇÏ½Ã·Á¸é y¶Ç´Â Y¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ê³„ì† í•˜ì‹œë ¤ë©´ yë˜ëŠ” Yë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		char ch2 = sc.next().charAt(0);
-		System.out.println("¿µ¹®ÀÚ yÀÎÁö È®ÀÎ : " + (ch2 == 'y' ll ch2 =='Y'));
+		System.out.println("ì˜ë¬¸ì yì¸ì§€ í™•ì¸ : " + (ch2 == 'y' || ch2 =='Y'));
 		
 	
 	}
