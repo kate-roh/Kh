@@ -1,16 +1,16 @@
-//6.22 ìˆ˜ì—…
-//7.5 ë³µìŠµ
+//6.22 ¼ö¾÷
+//7.5 º¹½À
 package com.test01;
 
 public class TestMain {
 
 	public static void main(String[] args) {
-		//ì¤€ë¹„ 
-		//í´ë˜ìŠ¤ëª… ë³€ìˆ˜ëª… = new í´ë˜ìŠ¤ëª…();
-		SwitchTest01 st = new SwitchTest01;
+		//ÁØºñ 
+		//Å¬·¡½º¸í º¯¼ö¸í = new Å¬·¡½º¸í();
+		SwitchTest01 st = new SwitchTest01();
 				
-		//ì‹¤í–‰
-		//ë³€ìˆ˜ëª….ë©”ì†Œë“œëª…();
+		//½ÇÇà
+		//º¯¼ö¸í.¸Ş¼Òµå¸í();
 //		st.test();
 //		st.test2();
 //		st.test3();	

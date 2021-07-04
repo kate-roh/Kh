@@ -1,10 +1,10 @@
-//6.22 ìˆ˜ì—…
-//7.5 ë³µìŠµ
+//6.22 ¼ö¾÷
+//7.5 º¹½À
 package com.test01;
 
 import java.util.Scanner;
 
-public class Switch01 {
+public class SwitchTest01 {
 
 	public static void main(String[] args) {
 		
@@ -16,16 +16,16 @@ public class Switch01 {
 		
 		switch(ch) {
 		case 'a' :
-			System.out.println("aì…ë‹ˆë‹¤.");
+			System.out.println("aÀÔ´Ï´Ù.");
 			break;
 		case 'b' :
-			System.out.println("bì…ë‹ˆë‹¤.");
+			System.out.println("bÀÔ´Ï´Ù.");
 			break;
 		case 'c' :
-			System.out.println("cì…ë‹ˆë‹¤.");
+			System.out.println("cÀÔ´Ï´Ù.");
 			break;
 		default : 
-			System.out.println("ë‹¤ë¥¸ ì˜ì–´ ì…ë‹ˆë‹¤.");
+			System.out.println("´Ù¸¥ ¿µ¾î ÀÔ´Ï´Ù.");
 		}
 	}
 	
@@ -34,71 +34,71 @@ public class Switch01 {
 		
 		switch(i) {
 		case '1' :
-			System.out.println("í™€ìˆ˜");
+			System.out.println("È¦¼ö");
 			break;
 		case '2' :
-			System.out.println("ì§ìˆ˜");
+			System.out.println("Â¦¼ö");
 			break;
 		case '3' :
-			System.out.println("í™€ìˆ˜");
+			System.out.println("È¦¼ö");
 			break;
 		case '4' :
-			System.out.println("ì§ìˆ˜");
+			System.out.println("Â¦¼ö");
 			break;
 		default : 
-			System.out.println("ë‹¤ë¥¸ ìˆ«ìì…ë‹ˆë‹¤.");
+			System.out.println("´Ù¸¥ ¼ıÀÚÀÔ´Ï´Ù.");
 		}		
 	}
 	
 	public void test4() {
-		String s = "ì˜êµ­";
+		String s = "¿µ±¹";
 		
 		switch(s) {
-		case "í•œêµ­" :
+		case "ÇÑ±¹" :
 			System.out.println("KOR");
 			break;
-		case "ë¯¸êµ­" :
+		case "¹Ì±¹" :
 			System.out.println("USA");
 			break;
-		case "ì˜êµ­" :
+		case "¿µ±¹" :
 			System.out.println("UK");
 			break;
 		default : 
-			System.out.println("ë‹¤ë¥¸ ë‚˜ë¼ ì…ë‹ˆë‹¤.");
+			System.out.println("´Ù¸¥ ³ª¶ó ÀÔ´Ï´Ù.");
 		}
 	}
 	
 	public void test5() {
 		
-//		//ì •ìˆ˜ í•˜ë‚˜ë¥¼ ì…ë ¥! ëª‡ì›”ì¸ì§€...
-//		ì…ë ¥ë°›ì€ ìˆ«ìê°€
-//		12,1,2 ë©´ ê²¨ìš¸
-//		3,4,5ë©´ ë´„
-//		6,7,9ì´ë©´ ì—¬ë¦„
-//		9,10,11ë©´ ê°€ì„ ì´ë¼ê³  ì¶œë ¥
-//		ë‹¨, 1~12ì‚¬ì´ì˜ ìˆ˜ê°€ ì•„ë‹ˆë©´ "1~12ì‚¬ì´ì˜ ê°’ë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”"ë¼ê³  ì¶œë ¥
+//		//Á¤¼ö ÇÏ³ª¸¦ ÀÔ·Â! ¸î¿ùÀÎÁö...
+//		ÀÔ·Â¹ŞÀº ¼ıÀÚ°¡
+//		12,1,2 ¸é °Ü¿ï
+//		3,4,5¸é º½
+//		6,7,9ÀÌ¸é ¿©¸§
+//		9,10,11¸é °¡À» ÀÌ¶ó°í Ãâ·Â
+//		´Ü, 1~12»çÀÌÀÇ ¼ö°¡ ¾Æ´Ï¸é "1~12»çÀÌÀÇ °ª¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä"¶ó°í Ãâ·Â
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ì›” ì…ë ¥: ");
+		System.out.print("¿ù ÀÔ·Â: ");
 		int month = sc.nextInt();
 		
 		switch(month) {
 		case 12 : 
 		case 1 : 
 		case 2 : 
-			System.out.println("ê²¨ìš¸");
+			System.out.println("°Ü¿ï");
 			break;
 		case 3 : case 4 : case 5 :
-			System.out.println("ë´„");
+			System.out.println("º½");
 			break;
 		case 6 : case 7 : case 8 :
-			System.out.println("ì—¬ë¦„");
+			System.out.println("¿©¸§");
 			break;
 		case 9 : case 10 : case 11 :
-			System.out.println("ê°€ì„");
+			System.out.println("°¡À»");
 			break;
 		default : 
-			System.out.println("1~12ì‚¬ì´ì˜ ê°’ë§Œ ì…ë ¥í•´ ì£¼ì„¸ìš”.") ;
+			System.out.println("1~12»çÀÌÀÇ °ª¸¸ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.") ;
 			}
 	}
 	

@@ -1,5 +1,5 @@
-//6.22 ìˆ˜ì—…
-//7.5 ë³µìŠµ
+//6.22 ¼ö¾÷
+//7.5 º¹½À
 package com.test01;
 
 import java.util.Scanner;
@@ -7,17 +7,17 @@ import java.util.Scanner;
 public class SwitchTest02 {
 
 	public void testSwitch() {
-		//ì •ìˆ˜ ë‘ê°œì™€ ì—°ì‚°ê¸°í˜¸ë¬¸ì(+,-,*,/)1ê°œë¥¼ ì…ë ¥ë°›ì•„ì„œ,
-		//ì—°ì‚°ê¸°í˜¸ ë¬¸ìì— í•´ë‹¹í•˜ëŠ” ê³„ì‚°ì„ ìˆ˜í–‰í•˜ê³  ì¶œë ¥.
+		//Á¤¼ö µÎ°³¿Í ¿¬»ê±âÈ£¹®ÀÚ(+,-,*,/)1°³¸¦ ÀÔ·Â¹Ş¾Æ¼­,
+		//¿¬»ê±âÈ£ ¹®ÀÚ¿¡ ÇØ´çÇÏ´Â °è»êÀ» ¼öÇàÇÏ°í Ãâ·Â.
 	Scanner sc = new Scanner(System.in);
 	
-	System.out.println("ì²«ë²ˆì§¸ ê°’: ");
+	System.out.println("Ã¹¹øÂ° °ª: ");
 	int no1 = sc.nextInt();
 	
-	System.out.println("ë‘ë²ˆì§¸ ê°’: ");
+	System.out.println("µÎ¹øÂ° °ª: ");
 	int no2 = sc.nextInt();
 	
-	System.out.println("ì—°ì‚°ì (+,-,*,/): ");
+	System.out.println("¿¬»êÀÚ (+,-,*,/): ");
 	char op = sc.next().charAt(0);
 	
 	int res = 0;
@@ -37,7 +37,7 @@ public class SwitchTest02 {
 		res = no1/no2;
 		break;
 	default:
-		System.out.println("ì˜ëª»ëœ ì—°ì‚°ê¸°í˜¸ë¥¼ ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.");
+		System.out.println("Àß¸øµÈ ¿¬»ê±âÈ£¸¦ ÀÔ·ÂÇÏ¿´½À´Ï´Ù.");
 		flag = false;
 	}
 	
