@@ -9,9 +9,9 @@ public class Munsae {
 			
 			System.out.print("이름:");
 			String name = sc.next();
-			Sysyem.out.print("나이:");
+			System.out.print("나이:");
 			int age = sc.nextInt();
-			system.out. print("키:");
+			System.out. print("키:");
 			double height = sc .nextDouble();
 			
 ////			 	if ((name ! = null) && (name.length() >0) && (age>0) && (height>0) ) {
