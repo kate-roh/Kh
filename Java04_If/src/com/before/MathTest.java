@@ -1,3 +1,6 @@
+//6.21 ìˆ˜ì—…
+//7.5 ë³µìŠµ
+
 package com.before;
 import java.util.Random;
 
@@ -13,42 +16,42 @@ public class MathTest {
 	public void testMath() {
 		System.out.println("PI: " + Math.PI);
 		
-		System.out.println("-7ÀÇ Àı´ë°ª: " + Math.abs(-7));
-		System.out.println("-123.4ÀÇ Àı´ë°ª: " + Math.abs(-123.4));
+		System.out.println("-7ì˜ ì ˆëŒ€ê°’: " + Math.abs(-7));
+		System.out.println("-123.4ì˜ ì ˆëŒ€ê°’: " + Math.abs(-123.4));
 		
-		System.out.println("ÀÓÀÇÀÇ ³­¼ö: " + Math.random());
+		System.out.println("ì„ì˜ì˜ ë‚œìˆ˜: " + Math.random());
 	}
 	
 	public void testRandom() {
-		//1ºÎÅÍ 100±îÁöÀÇ ³­¼ö ±¸ÇÏ±â
+		//1ë¶€í„° 100ê¹Œì§€ì˜ ë‚œìˆ˜ êµ¬í•˜ê¸°
 		int random = (int)(Math.random()*100)+1;
 		
 		System.out.println("random:"+ random);
 		
-		//0~99±îÁö
+		//0
 		int ran = new Random().nextInt(100);
 		System.out.println("ran: " + ran);
 
 	}
 	
 	public void pracRandom() {
-		//int ran1 : 0~9±îÁöÀÇ ·£´ı¼ö
-		//int ran2 : 1~10±îÁöÀÇ ·£´ı¼ö
-		//int ran3 : 20~35±îÁöÀÇ ·£´ı¼ö
-		//int ran4 : 0 ¶Ç´Â 1 
+		//int ran1 : 0~9ê¹Œì§€ì˜ ëœë¤ìˆ˜
+		//int ran2 : 1~10ê¹Œì§€ì˜ ëœë¤ìˆ˜
+		//int ran3 : 20~35ê¹Œì§€ì˜ ëœë¤ìˆ˜
+		//int ran4 : 0 ë˜ëŠ” 1 
 		
 		int ran1 = new Random().nextInt(9);
-				//Á¤´ä: (Math.random()*10); or  new Random().nextInt(10);
+		//ì •ë‹µ: (Math.random()*10); or  new Random().nextInt(10);
 		int ran2 = new Random().nextInt(10);
-				//Á¤´ä : (int)(Math.random()*10)+1; or  new Random().nextInt(10) +1 ;
+		//ì •ë‹µ : (int)(Math.random()*10)+1; or  new Random().nextInt(10) +1 ;
 		int ran3 = new Random().nextInt(35);
-				 //Á¤´ä : (int)(Math.random()*16)+20; or new Random().nextInt(10) +20 ; 
+		 //ì •ë‹µ : (int)(Math.random()*16)+20; or new Random().nextInt(10) +20 ; 
 		int ran4 = new Random().nextInt(1);
-				//Á¤´ä : (int)(Math.random()*2); or new Random().nextInt(2) ;
+		//ì •ë‹µ : (int)(Math.random()*2); or new Random().nextInt(2) ;
 
-		System.out.println("0~9±îÁöÀÇ ·£´ı¼ö : " + ran1);
-		System.out.println("1~10±îÁöÀÇ ·£´ı¼ö : " + ran2);
-		System.out.println("20~35±îÁöÀÇ ·£´ı¼ö : " + ran3);
-		System.out.println("0 ¶Ç´Â 1 : " + ran4);
+		System.out.println("0~9ê¹Œì§€ì˜ ëœë¤ìˆ˜ : " + ran1);
+		System.out.println("1~10ê¹Œì§€ì˜ ëœë¤ìˆ˜ : " + ran2);
+		System.out.println("20~35ê¹Œì§€ì˜ ëœë¤ìˆ˜ : " + ran3);
+		System.out.println("0 ë˜ëŠ” 1 : " + ran4);
 	}
 }
