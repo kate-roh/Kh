@@ -1,3 +1,6 @@
+//6.18 강의 
+//7.5 복습
+
 package com.test01;
 import java.util.Scanner;
 public class Operator03 {
