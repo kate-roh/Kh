@@ -1,5 +1,6 @@
 //6.22 수업
 //7.5 복습
+
 package com.test01;
 
 import java.util.Scanner;
