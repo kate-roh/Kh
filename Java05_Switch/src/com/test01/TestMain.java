@@ -15,7 +15,7 @@ public class TestMain {
 //		st.test2();
 //		st.test3();	
 //		st.test4();
-		st.test5();
+//		st.test5();
 		
 		new SwitchTest02().testSwitch();
 	}
