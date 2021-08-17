@@ -1,0 +1,27 @@
+<!--2021.08.17-->
+<!--아무것도 없는 상태에서 html를 누르면 5가 뜨는데 그걸 클릭하면 자동적으로 양식이 만들어짐-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록요소 인라인요소</title>
+</head>
+<body>
+    <h2>블록 요소</h2>
+    <p>줄을 바꿔줌</p>
+    <div style="background-color: pink;">
+        블록 요소 안에 텍스트, <b>인라인 요소</b> 를 포함 가능하다
+        <p>블록 요소 안에 블록 요소도 포함이 가능하다 </p>
+    </div>
+    <!--<div>은 줄을 바꿔줌-->
+    <hr>
+    <!--<hr>은 줄을 나눠줌-->
+    <h2> 인라인 요소</h2>
+    <a>줄 바꿈을 하지 않음</a>
+    <q style="background-color: skyblue;">인라인 요소 안에 텍스트와 <a>인라인 요소</a>까지 포함이 가능하다 </q>
+    <span>인라인 요소 안에 <p>블록 요소중에 하나</p> 까지도 포함이 가능하다.</span>
+</body>
+</html>
