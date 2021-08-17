@@ -1,0 +1,23 @@
+package com.controller;
+
+import java.util.List;
+
+import com.model.dto.Product;
+
+public class ProductController {
+	public List<Product> selectAll(){
+		return null;
+	}
+	public Product selectOne() {
+		return null;
+	}
+	public int insert() {
+		return 0;
+	}
+	public int update() {
+		return 0;		
+	}
+	public int delect() {
+		return 0;
+	}
+}

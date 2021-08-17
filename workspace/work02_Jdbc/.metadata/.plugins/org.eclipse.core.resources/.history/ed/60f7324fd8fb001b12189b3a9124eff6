@@ -1,0 +1,43 @@
+package com.model.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.model.dto.Product;
+
+public class ProductDao {	
+	public List<Product> selectAll(connection con){
+		PreparedStatement pstm = null;
+		ResultSet rs = null;
+		ArrayList <Product> list = new ArrayList<Product>();
+
+		String sql = "SELECT *FROM PRODUCT";
+		
+		try {
+			pstm = con.prepareStat	ement(sql);
+			rs = pstm.executeQuery();
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	public Product selectOne(Connection con, String p_name) {
+		return null;
+	}
+	public int insert(Connection con, product dto) {
+		return 0;
+	}
+	public int update() {
+		return 0;		
+	}
+	public int delect() {
+		return 0;
+	}
+	
+}

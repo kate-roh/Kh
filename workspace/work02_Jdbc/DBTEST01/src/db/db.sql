@@ -1,0 +1,15 @@
+--실행 : 블록쳐서 ALT + X키 누르기
+SELECT*FROM EMP;
+
+SELECT*FROM EMPLOYEE;
+
+
+
+DROP TABLE MYTEST; --실행했는데 테이블이 만들어지지 않앗기 때문에 실패가 뜨는데, 정상임
+CREATE TABLE MYTEST(
+	MNO NUMBER,
+	MNAME VARCHAR2(20),
+	NICKNAME VARCHAR2(20)
+	); --실행!
+	
+	SELECT*FROM MYTEST;--실행하자!

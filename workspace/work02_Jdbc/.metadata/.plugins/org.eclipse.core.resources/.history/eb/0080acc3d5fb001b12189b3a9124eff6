@@ -1,0 +1,24 @@
+package com.view;
+
+public class ProductView {
+	
+	public int getMenu() {
+		int select = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		return 0;
+	}
+	
+	public ProductView() {
+		int select = -1;
+		ProductController pc = new ProductController();
+		
+		while(select != 0) {
+			select = getMenu();
+		}
+		
+		
+		
+		
+	}
+}

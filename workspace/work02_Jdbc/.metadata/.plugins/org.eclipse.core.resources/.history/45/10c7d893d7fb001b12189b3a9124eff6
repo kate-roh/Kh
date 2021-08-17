@@ -1,0 +1,10 @@
+package com.model.dao;
+
+public class ProductDao {	
+	public List<Product> selectAll(connection con){
+		return null;
+	}
+	
+	
+	
+}

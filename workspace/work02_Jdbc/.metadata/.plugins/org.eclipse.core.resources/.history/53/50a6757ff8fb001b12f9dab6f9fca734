@@ -1,0 +1,59 @@
+package com.controller;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.model.dto.Product;
+
+public class ProductController {
+
+	ProductBiz pb = new ProductBiz();
+	
+	public List<Product> selectAll(){
+		return pb_selectall;
+		return null;
+	}
+	public Product selectOne() {
+		return null;
+	}
+
+	public int insert() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("***추가할 데이터 입력***");
+		
+		System.out.print("id: ");
+		String pid = sc.next();
+		System.out.print("name: ");
+		String pid = sc.next();
+		System.out.print("price: ");
+		String pid = sc.nextInt();
+		System.out.print("description	: ");
+		String pid = sc.next();
+		System.out.print("stock: ");
+		String pid = sc.nextInt();
+		
+		Product dto = new Product(pid, pname,price,desc,stock);
+			
+		return pb.insert(dto);
+	}
+	public int update() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("수정할 id: ");
+		String pid = sc.next();
+		System.out.print("변경할 price: ");
+		int price = sc.nextInt();
+		
+		Product dto = new Product();
+		dto.setProduct_id(pid);
+		dto.setPrice(price);
+		
+		return pb.update(dto);		
+	}
+	public int delete() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("삭제할 id: ");
+		String pid = sc.next();
+		
+		return pb.delete(______);
+	}
+}
