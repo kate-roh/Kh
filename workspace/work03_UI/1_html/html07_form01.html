@@ -7,7 +7,11 @@
     <title>폼 태그</title>
 </head>
 <body>
-    <form>
+    <form action="html07_form01_res.html" method="get">
+        <!--action : 수신대상, 
+            method: 어떤 방식으로 보낼꺼야? 
+            1)(get)방식이 디폴트! : url에 붙어서 데이터(id/pw)가 따라오는 것을 쿼리스트링이라고 부름
+            2) post : 쿼리스트링이 없음!(주요 정보가 표시되지 않는다) -->
         <fieldset>
             <legend>회원가입</legend>
             <p>아이디 : <input type="text" name="id"></p>
