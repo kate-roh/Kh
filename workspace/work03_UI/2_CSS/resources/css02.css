@@ -24,5 +24,84 @@ h1{
     color: pink;
 }
 #scls01{
+    color: green;
+}
+
+/*전체 선택자
+*{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}*/
+
+/*자식 선택자*/
+#at>p{
+    color: orange;
+}
+#at>div>p{
+    color: silver;
+}
+
+
+
+/*인접 선택자 */
+h3+b{
+    background-color: yellow;
+    color: brown;
+}
+    /*if)b태그를 바꾸고 싶을때?*/
+span + b{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*속성 선택자 */
+p[title]{
+    color: skyblue;
+}
+p[title="b"]{
+    color: goldenrod;
+}
+p[name]{
+    color: green;
+}
+
+/*가상 클래스 선택자 */
+a:link{
+    color:hotpink;
+}
+a:visited{
+    color: darkgreen;
+}
+a:hover/*커서가 글자위에 올라가면 변함*/{
+    background-color: purple;
+}
+a:active/*커서가 클릭할때 글씨가 변함*/{
+    color: red;
+}
+input:checked{
+    width: 200px;
+    height: 200px;
+}
+
+
+/*종속 선택자 */
+li.acls01{
     background-color: green;
+}
+li.acls02#sidli{
+    background-color: pink;
+    font-size: 20px;
+}
+
+/*하위 선택자 */
+div span{
+    background-color: yellow;
+}
+
+/*그룹 선택자 */
+p,pre,strong{
+    color: lime;
 }
