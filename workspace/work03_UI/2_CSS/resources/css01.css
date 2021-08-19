@@ -1,3 +1,5 @@
 b{color: aqua; margin: 10px;
-    <!--b는 선택자고, color는 설정값, 뒤의 aqua는 속성값을 의미함--->
+    /*b는 선택자고,
+     color는 설정값, 뒤의 aqua는 속성값을 의미함
+     margin 역시 설정값! */
 }

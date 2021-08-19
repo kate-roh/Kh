@@ -3,3 +3,26 @@
 pre{
     text-align: center;
 }
+h1{
+    text-align: right;
+    color: blue;
+}
+
+/* id 선택자 */
+#sid01{
+        color: green;
+}
+#sid02{
+    color:hotpink;
+}
+#sid03{
+    color: indigo;
+}
+
+/* class 선택자*/
+.scls{
+    color: pink;
+}
+#scls01{
+    background-color: green;
+}
