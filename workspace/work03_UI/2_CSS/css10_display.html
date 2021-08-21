@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>display</title>
 
 <style type="text/css">
-
+    div,p{
+        display: inline;
+        /*div태그의 display는 확인해봤듯이 
+                            설정해두지 않으면 block임*/
+    }
+    h1{
+        display: none;
+        /*코드 상으로는 존재하나 none을 했기때문에 표시도 안되고, 공간차지도 안함*/
+    }
 </style>
 </head>
 <body>
-    
+    <div id="header">
+        <h1>제목</h1>
+        <div id="menu1">
+            <a href="#">메뉴1</a>
+        </div>
+        <div id="menu2">
+            <p><a href="#">메뉴2</a>
+        </div>
+        <div id="menu3">
+            <p><a href="#">메뉴3</a></p>
+        </div>        
+    </div>
+
 </body>
 </html>
