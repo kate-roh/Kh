@@ -1,0 +1,53 @@
+<!--8.25강의 시작-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function test3(val){
+        document.getElementById("p2").innerHTML += val+ "<br>";
+    }
+    </script>
+
+    <h3> 함수의 리턴처리</h3>
+    <button onclick="test4();">실행확인</button>
+    <p id="p3"></p>
+    <script type="text/javascript">
+        function returnFunction(){
+            return Math.floor(Math.random()*100)+1;
+    }
+        function test4(){
+            var val = returnFunction();
+            document.getElementById("p3").innerHTML = val;
+    }
+    </script>
+    <h3>내부(중첩된)함수 테스트</h3>
+    삼각형 밑변 : <input type="number" min="1" max="100" id="width" required><br>
+    삼각형 높이 : <input type="number" min="1" max="100" id="height">
+    <button onclick="test5();">실행확인</button>
+    <p id="p4"></p>
+    <script type="text/javascript">
+        function hypotenuse(w,h){
+            function square(x){
+                return x*x;
+            }
+        return Math.sqrt(square(w) + sqrt(h));
+        }
+        function test5(){
+            var width = document.getElementById("width").value;
+            var height = document.getElementById("height").value;
+
+            document.getElementById("p4").innerHTML += "빗변 길이 :" + hypotenuse(width,height);
+        }
+    </script>
+    
+</body>
+</html>

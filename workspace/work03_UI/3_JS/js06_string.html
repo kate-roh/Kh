@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        doc.innerHtml += "toUpperCase(): " + str1.toUpperCase()+"<br>";
+        doc.innerHtml += "toLowCase(): " + str1.toLowerCase()+"<br>";
+    
+        doc.innerHtml += "lenth: " + str1.length + "<br>";
+    
+        doc.innerHtml += "문자열에서 e의 위치: " + (str1.indexOf('e')+1)+"번째 위치 <br>";
+        doc.innerHtml += "뒤에서부터 e의 위치: " + (str1.lastIndexOf('e')+1)+"번째 위치 <br>";
+    
+        for(var i=0; i<str1.length; i++){
+            doc.innerHtml += i+"번째 인덱스: " + str1.charAt(i) + "<br>"; 
+        }
+        function strTest01(){
+            var str01 = "String";
+            var str02 = "Test";
+
+            //두개의 문자열 합치기 : 1)'+'연산자 사용
+            var str03 = str01+str02;
+            alert("String + Test= " + str03);
+
+            //두개의 문자열 합치기 : 2)concat()
+            var str04 = str01.concat("Test","Java","Script");
+            alert("concat = " + str04);
+        }
+    </script>
+</head>
+<body>
+    <h1>String</h1>
+    <p>"",''로 묶여 있는 리터럴이다.<br>자바스크립트의 내장객체로 String객체의 기본 메소드가 있다.</p>
+    <button onclick="showStringMethod();">문자열 처리 메소드</button>
+    <div id="area1" class="area1"></div>
+    <br>
+    <p>문자열 합치기<button onclick="strTest01();">클릭</button></p>
+</body>
+</html>
