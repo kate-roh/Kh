@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
-
-    <script>
-        doc.innerHtml += "toUpperCase(): " + str1.toUpperCase()+"<br>";
-        doc.innerHtml += "toLowCase(): " + str1.toLowerCase()+"<br>";
+    <style type="text/css">
+        .area1{
+            border: 1px solid red;
+            height: 450px;
+        }
+        </style>
+        <script type="text/javascript">
+        function showStringMethod(){
+            var str1 = "Apple iPhone";
+            var doc = document.getElementById("area1");
+            doc.innerHtml += "toUpperCase(): " + str1.toUpperCase()+"<br>";
+            doc.innerHtml += "toLowCase(): " + str1.toLowerCase()+"<br>";
     
-        doc.innerHtml += "lenth: " + str1.length + "<br>";
+            doc.innerHtml += "lenth: " + str1.length + "<br>";
     
-        doc.innerHtml += "문자열에서 e의 위치: " + (str1.indexOf('e')+1)+"번째 위치 <br>";
-        doc.innerHtml += "뒤에서부터 e의 위치: " + (str1.lastIndexOf('e')+1)+"번째 위치 <br>";
+            doc.innerHtml += "문자열에서 e의 위치: " + (str1.indexOf('e')+1)+"번째 위치 <br>";
+            doc.innerHtml += "뒤에서부터 e의 위치: " + (str1.lastIndexOf('e')+1)+"번째 위치 <br>";
     
-        for(var i=0; i<str1.length; i++){
-            doc.innerHtml += i+"번째 인덱스: " + str1.charAt(i) + "<br>"; 
+            for(var i=0; i<str1.length; i++){
+                doc.innerHtml += i+"번째 인덱스: " + str1.charAt(i) + "<br>"; 
+            }
         }
         function strTest01(){
-            var str01 = "String";
-            var str02 = "Test";
+                var str01 = "String";
+                var str02 = "Test";
 
             //두개의 문자열 합치기 : 1)'+'연산자 사용
             var str03 = str01+str02;
@@ -29,6 +38,21 @@
             //두개의 문자열 합치기 : 2)concat()
             var str04 = str01.concat("Test","Java","Script");
             alert("concat = " + str04);
+
+            //join(): 특정 값을 배열 요소들 사이에 삽입해서 문자열로 반환한다.
+        }
+        function strTest03(){
+            //indexof, substring
+            var strVal = "문자열 추출하기.관련 함수:indexOf, substring.";
+            var startIndex = strVal.indexOf(":");
+            var endIndex = strVal.lastIndexOf(".");
+            var subStr = strVal.substring(strartIndex+1, endIndex);
+            alert(subStr);
+
+            //split : 짤라서 배열(밑에서는 splitval)로 관리한다.
+            var splitVal = subStr.split(",");
+            alert(splitVal[0]);
+            alert(splitVal[1]);   
         }
     </script>
 </head>
@@ -38,6 +62,11 @@
     <button onclick="showStringMethod();">문자열 처리 메소드</button>
     <div id="area1" class="area1"></div>
     <br>
-    <p>문자열 합치기<button onclick="strTest01();">클릭</button></p>
+    <p>
+        문자열 합치기<button onclick="strTest01();">클릭</button><br>
+        문자열 비교하기<button onclick="strTest02();">클릭</button><br>
+        문자열 추출하기<button onclick="strTest03();">클릭</button><br>
+    </p>
+    
 </body>
 </html>

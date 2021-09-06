@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    $( img ).click(function(){
+        alert("이미지를 클릭했습니다.");
+        $(this).hide();
+    });
+});
+function showImg(){
+    $("img").show();
+}
+
+function resizeImg(){
+    //$("img").css("width","100px").css("height","100px");
+    $("img").css({ "width":"100px" , "height":"150px" });
+}
+function addImg(){
+    $("img").after("<img src='image/img01.png'>");
+}
+</script>
+</head>
+
+<body>
+    <h1>jQuery 시작</h1>
+    <ul id="list01">
+        <li>1.셀텍터 표현식</li>
+        <li>2.DOM탁색</li>
+        <li>3.이벤트</li>
+        <li>4.이펙트</li>
+        <li>5. </li>
+        
+    </ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test02</title>
+</head>
+<body>
+    <h2>연습2<h2>
+    <form method="GET" action="">
+        <fieldset>
+            <legend>납품정보</legend>
+            <ul>
+                <li>
+                    상품명 : <input type="text" id="productName" list="goodlist">
+                    <datalist id="goodlist">
+                        <option value="dog1004"> 도그 1004</option>
+                        <option value="catchicken">고양이 치킨</option>
+                        <option value="milk">우유</option>
+                    </datalist>
+                </li>
+                <br>
+                <li>
+                    납품수량 : <input type="number" id="productAmount" min="10" max="100"
+                                     step="10" placeholder="최소10이상">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
