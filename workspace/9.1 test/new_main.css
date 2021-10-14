@@ -1,0 +1,145 @@
+body{
+    /* background-color 설정 */
+    background-color: white;
+    /* 모든 여백 제거 */
+    margin: 0;
+    padding: 0;
+}
+h1{
+    /* 가운데 정렬 */
+    text-align: center;
+    /* 폰트 크기 조정 */
+    font-size: 90px;
+    /* 색 지정 */
+    color: #1EC800;
+    /* 여백 제거 */
+    margin: 0;
+    /* 상20px 우좌하0 */
+    padding: 20px 0 0 0;
+}
+div{
+    background-color: rgb(229, 231, 230);
+    /* 가로 크기 제한 */
+    width: 530px;
+    /* 상하 30px 띄우기 auto 가운데 정렬 */
+    margin: 30px auto;
+}
+input{
+    /* 가로 크기 지정 */
+    width: 440px;
+    /* 상하 5px 좌우 여백 제거 */
+    margin: 5px 0;
+    /* 안쪽여백 2px */
+    padding: 2px;
+}
+ul{
+    /* 여백 제거 */
+    margin: 0;
+    /* 여백 상하0 우좌41px */
+    padding: 0 41px ;
+}
+li{
+    /* list 앞에 기호 제거 */
+    list-style: none;
+    /* 상하 15px 띄우고 좌우 여백 제거 */
+    margin: 15px 0;
+}
+input,select{
+    /* input , select 창의 높이 설정 */
+    height: 40px;
+    border: 1px solid gray;
+}
+label{
+    /* label 태그와 input 태그의 줄간격 설정 */
+    line-height: 40px;
+}
+button{
+    /* 글씨 크기 16px 지정 */
+    font-size: 15px;
+    /* 마우스를 가져다 댈 시 손가락 모양 */
+    cursor: pointer;
+    /* 색깔 흰색 지정 */
+    color: white;
+    /* 바탕색 초록색 지정 */
+    background-color: #2DB400;
+    /* 테두리 초록색 지정 */
+    border: 1px solid #2DB400;
+    /* 높이 40px 지정 */
+    height: 50px;
+    /* block으로 한 공간을 차지하도록 설정 */
+    display: block;
+}
+#date {
+    width: 448px;
+}
+
+/* number 기호 삭제 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+#year{
+    /* 가로 크기 150px */
+    width: 130px;
+}
+#month{
+    /* 가로 크기 90px 높이 44px */
+    width: 140px;
+    height: 44px;
+    /* 상하 0 우좌 18px 여백설정 */
+    margin: 0px 18px;
+}
+#day{
+    /* 가로 크기 155px */
+    width: 100px;
+    /* 오른쪽 정렬 */
+    float: right;
+    /* 여백 제거 */
+    margin: 5px 0 0 0;
+
+}
+#b_Check{
+    /* 오른쪽 정렬 */
+    float: right;
+    /* 상하 7px 좌우 여백 제거 */
+    margin: 7px 0;
+}
+label{
+    /* 글꼴 크기 16px */
+    font-size: 15px;
+    /* 부제목 굵게 설정 */
+    font-weight: bold;
+}
+
+#gender,#phonenumber{
+    /* 가로 크기 448px */
+    width: 448px;
+    /* 상하 5px 좌우 여백 제거 */
+    margin: 3px 0;
+}
+#phonecode{
+    /* 가로 크기 310px */
+    width: 250px;
+}
+#b_Join{
+    /* 가로 크기 448px */
+    width: 450px;
+    /* 상하 여백 제거 좌우 5px */
+    margin: 0;
+}
+
+/* footer */
+#footer{
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+#footer p{
+    margin: 10px 0;
+}
+#footer span{
+    color: #2DB400;
+}

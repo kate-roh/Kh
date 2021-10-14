@@ -1,0 +1,21 @@
+.caption{font-size:25px; font-weight:bold; color: red;}
+.back_color{
+    background-color: red;
+    color: white;
+    text-align: center;
+
+}
+.back_color1{
+    background-color: orange;
+    text-align: center;
+}
+.back_color2{
+    background-color: yellow;
+    font-weight: bold ;
+    color: red; 
+    text-align: center;
+}
+.button{
+    background-color: green;
+    color:white;
+}

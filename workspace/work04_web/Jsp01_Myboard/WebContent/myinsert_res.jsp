@@ -4,7 +4,7 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 <% response.setContentType("text/thml; charset=UTF-8"); %>
 
-<%@ page import="com.my.dto.myBoardDto" %>
+<%@ page import="com.login.dto.myBoardDto" %>
 <%@ page import="com.my.dao.myBoardDao" %>
 
 <!DOCTYPE html>

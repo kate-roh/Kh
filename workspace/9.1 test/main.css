@@ -1,0 +1,101 @@
+body{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+fieldset{
+    width: auto;
+    height: 330px;
+    margin: 10px;
+}
+div{
+    margin: 1px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    margin: 0 22px 0 23px;
+}
+#content{
+    position: relative;
+    bottom:20px;
+}
+#fl{
+    margin: 0 12px 0 0;
+}
+input[type="file"]{
+    margin: 0;
+}
+input{
+    width: 300px;
+    margin: 5px 10px;
+}
+#text{
+    width: 300px;
+    margin: 0;
+}
+
+
+#submit{
+    width: 300px;
+
+}
+#submit{
+    display: block;
+    margin: 25px auto;
+    width: 80px;
+}
+hr{
+    margin: 20px 0;
+}
+
+/* table */
+table,th,td{
+    margin: 15px;
+    border: 2px double black;
+}
+table{
+    width: 100%;
+}
+th{
+    height: 30px;
+    width: auto;
+    text-align: center;
+    background-color: rgb(228, 143, 128);
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+td{
+    height: 25px;
+    background-color:white;
+}
+
+#t1{
+    width: 4%;
+}
+#t2{
+    width: 10%;
+}
+#t3{
+    text-align: center;
+    width: 10%;
+    background-color: white;
+}
+#t4{
+    width: 15%;
+}
+#t5{
+    width: 6%;
+}
+#t_foot{
+    height: 20px;
+    width: auto;
+    text-align: center;
+    background-color: rgb(228, 143, 128);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
